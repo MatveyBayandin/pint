@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    /* outline: 1px solid black; */
+}
+
+.login-main-pravo {
+    width: 100%;
+    padding: 50px 30px;
+    margin: 0;
+}
+
+.body-body-body {
+    background: #cfb2cf;
+}
+.imgkorzina{
+    padding: 0 I !important;
+    border-radius: 10px !important;
+    margin: 10px !important;
+}

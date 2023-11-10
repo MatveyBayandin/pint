@@ -1,0 +1,247 @@
+
+
+.header-glavnaya-b {
+    margin: auto 0;
+}
+
+.login-main {
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+/* Левая часть */
+
+.login-main-levo {
+    height: 25vh;
+    width: 220px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.login-main-levo input {
+    width: 210px;
+    height: 70px;
+    display: flex;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 0px;
+    cursor: pointer;
+    background: #ecddec;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #800080;
+    font-weight: bold;
+    justify-content: center;
+    white-space: normal;
+    line-height: normal;
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0, 0.3);
+}
+
+.login-main-levo input:hover {
+    color: #ffffff;
+    background: #800080;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.login-main-levo input:not(:hover) {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/* Правая часть */
+
+.login-main-pravo {
+    min-height: 100vh;
+    width: 82%;
+    background-color: #cfb2cf;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 15px;
+    columns: 4;
+    column-gap: 20px;
+}
+
+.l-m-p-b-i-img {
+    width: 100%;
+    break-inside: avoid;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.l-m-p-b-i-img img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.avatarka {
+    height: 30px;
+    margin-left: 10px;
+}
+
+/* Выпадающее меню профиля */
+.vipadmenu {
+    background-color: #800080;
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    display: none;
+    z-index: 2;
+    top: 42px;
+    font-family: 'Libre Franklin', sans-serif;
+    cursor: pointer;
+}
+
+.vipadmenu a {
+    color: #ecddec;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.vipadmenu div {
+    justify-content: center;
+    padding: 10px 0 5px 0;
+    display: flex;
+    height: 50px;
+    word-break: break-all;
+}
+
+.btn-logo {
+    cursor: pointer;
+}
+
+.smenaavatarka {
+    background-color: #800080;
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    display: relative;
+    z-index: 3;
+    top: 42px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.smenaavatarka input {
+    width: 200px;
+    height: 20px;
+}
+
+.headerlogin {
+    background-color: #fff;
+    line-height: normal;
+}
+
+.loginbody {
+    background-color: #cfb2cf;
+}
+
+/* ПОПАП ДОБАВЛЕНИЕ ФОТОГРАФИЙ */
+.input-file-btn2 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    color: rgb(255 255 255);
+    text-align: center;
+    border-radius: 4px !important;
+    background-color: #800080;
+    line-height: 22px;
+    height: 40px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none !important;
+    margin: 0;
+    transition: background-color 0.2s;
+}
+
+.input-file {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+
+}
+
+.input-file-btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    color: rgb(255 255 255);
+    text-align: center;
+    border-radius: 4px;
+    background-color: #800080;
+    line-height: 22px;
+    height: 40px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    transition: background-color 0.2s;
+}
+
+.input-file-btn2:hover {
+    background-color: #ecddec;
+    color: #800080;
+}
+
+.input-file-text {
+    padding: 0 10px;
+    line-height: 40px;
+    display: inline-block;
+}
+
+.input-file input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+/* Focus */
+.input-file input[type=file]:focus+.input-file-btn {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+/* Hover/Active */
+.input-file:hover .input-file-btn {
+    background-color: #ecddec;
+    color: #800080;
+}
+
+.input-file:active .input-file-btn {
+    background-color: #ecddec;
+    color: #800080;
+}
+
+/* Disabled */
+.input-file input[type=file]:disabled+.input-file-btn {
+    background-color: #eee;
+}
+
+.imgkorzina {
+    width: 30px !important;
+    height: 30px !important;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #c58ac5;
+    border-radius: 10px !important;
+    padding: 5px;
+    cursor: pointer;
+}

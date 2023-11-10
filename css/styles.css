@@ -1,0 +1,459 @@
+* {
+    box-sizing: border-box;
+    /* outline: 1px solid black; */
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+body {
+    height: 100%;
+}
+
+/* ШАПКА*/
+.head-logo img {
+    height: 50px;
+}
+
+.header-container {
+    padding: 0 40px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: bold;
+}
+
+.btn-logo {
+    margin: auto 0;
+    position: relative;
+}
+
+/*  */
+/* Попап */
+.popup-bg {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.popup {
+    border-radius: 20px;
+    position: absolute;
+    background: #ffffff;
+    width: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    padding-top: 60px;
+    font-family: 'Libre Franklin', sans-serif;
+
+}
+
+.popup img {
+    cursor: pointer;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.popup form {
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.popup form input {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 250px;
+    border-radius: 20px;
+    border: 3px solid rgb(180, 179, 179);
+}
+
+.popup-vhod-btn1 {
+    width: 250px;
+    border-radius: 20px;
+    border: 0;
+    height: 40px;
+    color: white;
+    background-color: #800080;
+    cursor: pointer;
+
+}
+
+.popup-vhod-btn2 {
+    color: rgb(180, 179, 179);
+    background: white;
+    border: 0;
+    width: 250px;
+    text-align: left;
+    margin-top: 20px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.popup-vhod-btn2:hover {
+    color: #800080;
+}
+
+.open-login-diz {
+    background: #800080;
+    padding: 10px 50px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.open-login-diz:hover {
+    background: #770477;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.open-login-diz:not(:hover) {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.open-reg-diz {
+    background: #ecddec;
+    padding: 10px 50px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #800080;
+}
+
+.open-reg-diz:hover {
+    color: #ffffff;
+    background: #cfb2cf;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.open-reg-diz:not(:hover) {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/*  */
+/* Страница-контент */
+.glavnayastranica {
+    background-color: #cfb2cf;
+    height: 800px;
+}
+
+/*  */
+/* Подвал */
+.footer {
+    background-color: rgb(180, 179, 179);
+    margin-top: auto;
+    text-align: center;
+    line-height: normal;
+
+}
+
+.footer-container {
+    height: 40px;
+    padding-top: 12px;
+    font-size: 14px;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 20px;
+    font-family: 'Libre Franklin', sans-serif;
+
+}
+
+.fullscreen {
+    min-height: 100vh;
+    display: flex;
+}
+
+.placeholder1 {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    font-size: 14px;
+    padding: 0px 5px;
+    color: #666;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.polya:focus+.placeholder1 {
+    top: 60px;
+    color: #770477;
+    background-color: #fff;
+}
+
+.placeholder2 {
+    position: absolute;
+    top: 140px;
+    left: 80px;
+    font-size: 14px;
+    padding: 0px 5px;
+    color: #666;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.polya:focus+.placeholder2 {
+    top: 120px;
+    color: #770477;
+    background-color: #fff;
+}
+
+
+.placeholder3 {
+    position: absolute;
+    top: 200px;
+    left: 80px;
+    font-size: 14px;
+    padding: 0px 5px;
+    color: #666;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.polya:focus+.placeholder3 {
+    top: 180px;
+    color: #770477;
+    background-color: #fff;
+}
+
+.placeholder4 {
+    position: absolute;
+    top: 260px;
+    left: 80px;
+    font-size: 14px;
+    padding: 0px 5px;
+    color: #666;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.polya:focus+.placeholder4 {
+    top: 240px;
+    color: #770477;
+    background-color: #fff;
+}
+
+
+.polya:not(:placeholder-shown)+.placeholder1 {
+    top: 60px;
+    color: #770477;
+    background-color: #fff;
+}
+
+.polya:not(:placeholder-shown)+.placeholder2 {
+    top: 120px;
+    color: #770477;
+    background-color: #fff;
+}
+
+.polya:not(:placeholder-shown)+.placeholder3 {
+    top: 180px;
+    color: #770477;
+    background-color: #fff;
+}
+
+.polya:not(:placeholder-shown)+.placeholder4 {
+    top: 240px;
+    color: #770477;
+    background-color: #fff;
+}
+
+.polya::placeholder {
+    opacity: 0;
+}
+
+/*Пэйдж*/
+.page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Мейн */
+.glavnayastranica-container {
+    display: flex;
+}
+
+.main-levo {
+    background-color: #cfb2cf;
+    height: 100vh;
+    width: 60%;
+    position: relative;
+
+}
+
+.main-pravo {
+    background-color: #cfb2cf;
+    height: 100vh;
+    width: 40%;
+    text-align: center;
+    position: relative;
+    font-family: 'Libre Franklin', sans-serif;
+
+}
+
+.main-pravo h2 {
+    font-weight: 400;
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 0;
+    font-family: 'Bagel Fat One', cursive;
+}
+
+.main-pravo p {
+    font-weight: bold;
+    color: #770477;
+    margin-bottom: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-pravo-vhod a {
+    text-decoration: none;
+    color: #cfb2cf;
+    background-color: #fff;
+    padding: 15px 70px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.main-pravo-vhod a:hover {
+    background-color: #770477;
+    color: #ffffff;
+    transition: all 1s linear;
+}
+
+.main-pravo-vhod {
+    margin: 0 auto;
+    margin-top: 400px;
+    font-weight: 700;
+}
+
+.fig1 {
+    width: 194px;
+    height: 281px;
+    left: 85px;
+    top: 259px;
+    overflow: hidden;
+}
+
+.fig1 img {
+    width: 194px;
+    height: 281px;
+    position: absolute;
+    top: 0px;
+}
+
+.fig2 {
+    width: 201px;
+    height: 308px;
+    left: 182px;
+    top: 462px;
+    overflow: hidden;
+
+}
+
+.fig2 img {
+    height: 308px;
+    position: absolute;
+    left: -13px;
+}
+
+.fig3 {
+    width: 302px;
+    height: 149px;
+    left: 462px;
+    top: 271px;
+    overflow: hidden;
+
+}
+
+.fig3 img {
+    width: 302px;
+    position: absolute;
+    top: -80px;
+}
+
+.fig4 {
+    width: 365px;
+    height: 176px;
+    left: 355px;
+    top: 440px;
+    overflow: hidden;
+}
+
+.fig4 img {
+    top: -50px;
+    width: 365px;
+    position: absolute;
+}
+
+.fig5 {
+    width: 239px;
+    height: 110px;
+    left: 493px;
+    top: 687px;
+    overflow: hidden;
+}
+
+.fig5 img {
+    width: 339px;
+    height: 110px;
+    position: absolute;
+    left: -60px;
+
+}
+
+.fig_style {
+    position: absolute;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.3);
+}
+
+.main-fig {
+    position: relative;
+    top: -10%;
+}
+
+.no-scrollbar {
+    width: 240px;
+    height: 150px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /*mozilla*/
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+    /*chrome*/
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.sama-fotka{
+    box-shadow: 0px 0px px 1px rgb(0, 0, 0, 0.3);
+}
